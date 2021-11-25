@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+/* header */
+
+.header-container {
+    width: 100%;
+    height: 80vh;
+    background-image: url("assets/star uó topo@2x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid pink;
+}
+
+.header-content {
+    width: 60%;
+    min-height: 100%;
+    border: 2px solid red;
+    margin-top: 13%;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-star-wars {
+    width: 20vw;
+}
+
+.img-kylo {
+    width: 52vw;
+    /* height: ; */
+    position: absolute;
+    right: 10rem;
+}
+
+.img-legion {
+    width: 8vw;
+    position: absolute;
+    bottom: 4.5rem;
+    right: 4.5rem;
+}
