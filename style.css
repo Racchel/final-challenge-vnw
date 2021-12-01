@@ -4,51 +4,71 @@
     box-sizing: border-box;
 }
 
-:root {
-
-}
-
-/* header */
-
 .header-container {
-    width: 100%;
-    height: 80vh;
+    width: 100vw;
+    height: 40vw;
+
     background-image: url("assets/star uó topo@2x.png");
     background-repeat: no-repeat;
+    background-position:center; 
     background-size: cover;
 
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    border: 2px solid pink;
+
+    position: relative;
 }
 
-.header-content {
-    width: 60%;
-    min-height: 100%;
-    border: 2px solid red;
-    margin-top: 13%;
-    position: relative;
+.box-left {
+    width: 50%;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-end;
+    
+    padding-top: 9.5%;
+    padding-right: 5%
+}
+
+.box-right {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    padding-top: 9.5%;
+    padding-left: 15%;
+}
+
+.box-kylo {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    position: absolute;
+    top: 12%;
+    z-index: 1;
 }
 
 .img-star-wars {
-    width: 20vw;
+    width: 26.1vw;
 }
 
 .img-kylo {
-    width: 52vw;
-    /* height: ; */
-    position: absolute;
-    right: 10rem;
+    width: 70.4vw;
 }
 
 .img-legion {
-    width: 8vw;
+    width: 9.1vw;
     position: absolute;
-    bottom: 4.5rem;
-    right: 4.5rem;
+    bottom: 0;
+    right: 11.6%;
+}
+.box-download{
+    width: 20.7%;
+    height: 40.5%;
+    background-image: url("./assets/strom trupe red.png");
 }
