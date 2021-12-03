@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
 }
 
+/* global */
+
+h3 {
+    text-transform: uppercase;
+}
+
+/* header */
+
 .header-container {
-    width: 100vw;
     height: 40vw;
 
-    background-image: url("assets/star uó topo@2x.png");
+    background-image: url("assets/star-war-top.png");
     background-repeat: no-repeat;
     background-position:center; 
     background-size: cover;
@@ -70,5 +81,96 @@
 .box-download{
     width: 20.7%;
     height: 40.5%;
-    background-image: url("./assets/strom trupe red.png");
+    background-image: url("assets/strom-trupe-red.png.png");
+}
+
+/* main */
+
+.container {
+    /* width: 100vw; */
+    background-image: url("assets/star-wars-robot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-right: 50px;
+}
+
+.container-game-info {
+    width: 80%;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 50px;
+}
+
+/* content-start */
+
+.content-game-start {
+    width: 220px;
+    background-color: red;
+
+    padding: 70px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.content-game-start h3{
+    font-size: 40px;
+    font-weight: 400git;
+    color: #fff;
+}
+
+/* content-game-about */
+
+.content-game-about {
+    width: calc(90% - 200px);
+    background-color: green;
+    
+    display: flex;
+    font-size: 12px;
+
+    position: relative;
+    bottom: 20px;
+    z-index: 999;
+}
+
+.img-game-about {
+    width: 250px;
+}
+
+.content-game-structure {
+    width: 220px;
+    background-color: red;
+
+    padding: 70px 20px;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.img-lord-sifh {
+   width: 400px; 
+}
+
+.img-rey{
+   width: 200px; 
 }
