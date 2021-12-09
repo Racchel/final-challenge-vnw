@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +10,22 @@
     list-style: none;
 }
 
-/* global */
+/* GLOBAL */
 
 h3 {
+    /* text */
     text-transform: uppercase;
+}
+
+/* FLEX */
+
+.flex-row-centerXY {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.flex-row-centerY {
+    display: flex;
+    align-items: center;
 }
