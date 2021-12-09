@@ -1,0 +1,69 @@
+.header-container {
+    height: 40vw;
+
+    background-image: url("../../assets/used/star-war-top.png");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size: cover;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    position: relative;
+}
+
+.box-left {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    padding-top: 9.5%;
+    padding-right: 5%
+}
+
+.box-right {
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    padding-top: 9.5%;
+    padding-left: 15%;
+}
+
+.box-kylo {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    position: absolute;
+    top: 12%;
+    z-index: 1;
+}
+
+.img-star-wars {
+    width: 26.1vw;
+}
+
+.img-kylo {
+    /* width: 70.4vw; */
+    width: 62vw;
+}
+
+.img-legion {
+    width: 9.1vw;
+    position: absolute;
+    bottom: 0;
+    right: 11.6%;
+}
+
+.box-download{
+    width: 20.7%;
+    height: 40.5%;
+    background-image: url("../../assets/used/strom-trupe-red.png.png");
+}

@@ -1,0 +1,21 @@
+.content-game-structure {
+    width: 220px;
+    /* background-color: red; */
+
+    padding: 70px 20px;
+    text-align: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img-lord-sifh {
+   width: 400px; 
+}
+
+.img-rey{
+   width: 200px; 
+}
+

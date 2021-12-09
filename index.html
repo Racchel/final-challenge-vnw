@@ -1,79 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<!-- HEADER -->
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Script -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+    <!-- Title -->
     <title>Star Wars</title>
+
 </head>
+
+<!-- BODY -->
 <body>
 
-    <header class="header-container">
-        <div class="box-left">
-            <img class="img-star-wars" src="assets/star.png" alt="">
-        </div>
-
-        <div class="box-right">
-            <img class="img-star-wars" src="assets/wars.png" alt="">
-        </div>  
-        <div class="box-kylo">
-            <img class="img-kylo" src="assets/kylo-ren-banner.png" alt=""> 
-        </div>
-        <img class="img-legion" src="assets/crie-sua-legiao.png" alt="">
+    <!-- HEADER -->
+    <header 
+        class="header-container"
+        w3-include-html="pieces/Header/header.html">
     </header>
-    <main>
-        <section class="container">
 
-            <section class="container-game-info">
-                <div class="content-game-start">
-                    <h3>Comece a jogar</h3>
-                    <p>
-                        Baixe o jogo, 
-                        cadastre seu nome de usuário e 
-                        comece a interagir com mais de 
-                        um milhão de jogadores.
-                    </p>
-                    <button>Download</button>
-                    <p>10/07/2020 test update</p>
-                </div>
-                <div class="content-game-about">
-                    <div class="">
-                        <h3>Sobre o jogo</h3>
-                        <div></div>
-                        <p>
-                            Star Wars Battlefront é um jogo eletrônico de 
-                            tiro em primeira e terceira pessoa, produzido 
-                            pela DICE e baseado na franquia Star Wars. 
-                            Foi publicado pela Electronic Arts com a chancela da 
-                            LucasArts a 17 de Novembro de 2015 para Microsoft Windows, 
-                            PlayStation 4 e Xbox One.
-                        </p>
-                    </div>
-                    <img class="img-game-about" src="/assets/frente-de-batalha.png " alt="">
-                </div>
-            </section>
-
-            <section class="container-game-info">
-
-                <img class="img-lord-sifh" src="assets/lord-sifh.png" alt="">
-
-                <div class="content-game-structure">
-                    <h3>Estrutura do jogo</h3>
-                    <ul>
-                        <li>Jornada</li>
-                        <li>A jornada do guerreiro estelar</li>
-                        <li>Heróis contra os vilões</li>
-                        <li>A batalha galáctica</li>
-                        <li>Superioridade</li>
-                        <li>Fliperama</li>
-                    </ul>
-                </div>
-
-                <img class="img-rey" src="assets/rey.png" alt="">
-
-            </section>
-        </section>
+    <!-- MAIN -->
+    <main 
+        class="main-container"
+        w3-include-html="pieces/Main/main.html">
     </main>
+
+    <!-- FOOTER -->
+    <footer 
+        class="footer-container"
+        w3-include-html="pieces/Footer/footer.html">
+    </footer>
+
+    <!-- Script -->
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
 </html>

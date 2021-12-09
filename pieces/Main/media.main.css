@@ -1,0 +1,43 @@
+@media (max-width: 1080px) {
+
+    .content-game-about { width: 60%;}
+}
+
+@media (max-width: 980px) {
+
+    .content-game-about {  
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .box-text { width: 90%;}
+}
+
+@media (max-width: 800px) {
+
+    .content-game-about  {
+        width: 50%; 
+    }
+    .box-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .container-game-info {
+        flex-direction: column;
+        position: static;   
+    }
+
+    .content-game-start {
+        position: static;
+        margin-bottom: 2rem;
+        z-index: 0;
+    }
+
+    .content-game-about { 
+        width: 80%; 
+        position: static; 
+    }
+}

@@ -1,0 +1,34 @@
+@import "media.main.css";
+@import "../../components/Start_and_About/about.css";
+@import "../../components/Start_and_About/start.css";
+@import "../../components/Struture/content.css";
+
+.container {
+    /* width: 100vw; */
+    background-image: url("../../assets/used/star-wars-robot.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    padding-right: 5rem;
+}
+
+.container-game-info {
+    min-width: 100%;
+    min-height: 60vh;
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+    position: relative;
+    top: 0px;
+}
+

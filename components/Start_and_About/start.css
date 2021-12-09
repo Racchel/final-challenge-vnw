@@ -1,0 +1,63 @@
+/* content-start */
+
+.content-game-start {
+    width: 15rem;
+    height: 22.5rem;
+    background-image: url("../../assets/used/strom-trupe-red.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 4rem 1rem 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: 15%;
+    z-index: 999;
+}
+
+.content-game-start .box-title {
+    width: 70%;
+}
+
+.content-game-start h3{
+    text-align: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.content-game-start p{
+    font-size: 0.7rem;
+    font-weight: 200;
+    color: #fff;
+
+    margin: 2rem 0;
+}
+
+.content-game-start button{
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+
+    border: 1px solid #fff;
+    border-radius: 5%;
+
+    color: #fff;
+}
+
+.content-game-start .content-test-update {
+    width: 100%;
+    padding: 1rem 0;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.content-test-update span{
+    font-size: 0.5rem;
+    color: #fff;
+    text-align: right;
+}
