@@ -10,10 +10,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Script -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-
+    
     <!-- Title -->
     <title>Star Wars</title>
 
@@ -23,26 +20,112 @@
 <body>
 
     <!-- HEADER -->
-    <header 
-        class="header-container flex-row-centerXY"
-        w3-include-html="pieces/Header/header.html">
+    <header class="header-container flex-row-centerXY">
+        <div class="box-left flex-row-centerY">
+            <img class="img-star-wars" src="../../assets/used/star.png" alt="star"/>   
+        </div>
+
+        <div class="box-right flex-row-centerY">
+            <img class="img-star-wars" src="../../assets/used/wars.png" alt="wars"/>
+        </div>  
+
+        <div class="box-kylo">
+            <img class="img-kylo" src="../../assets/used/kylo-ren-banner.png" alt="kylo"> 
+        </div>
+
+        <img  class="img-legion" src="../../assets/used/crie-sua-legiao.png" alt="crie sua legião"/>
     </header>
 
     <!-- MAIN -->
-    <main 
-        class="main-container"
-        w3-include-html="pieces/Main/main.html">
+    <main class="main-container">
+
+        <section class="container-one">
+            <section class="container-game-info">
+
+                <div class="content-game-start">
+                    <div class="box-title">
+                        <h3>Comece a jogar</h3>
+                    </div>
+                    <p>
+                        Baixe o jogo, 
+                        cadastre seu nome de usuário e 
+                        comece a interagir com mais de 
+                        um milhão de jogadores.
+                    </p>
+                    <button>Download</button>
+                    <div class="content-test-update">
+                        <span>10/07/2020 test update</span>
+                    </div>  
+                </div>
+
+                <div class="content-game-about">
+                    <img class="img-game-about" src="assets/used/frente-de-batalha.png " alt="frente de batalha">
+
+                    <div class="box-text">
+                        <h3>Sobre o jogo</h3>
+                        <div class="decoration"></div>
+                        <div class="text">
+                            <p>
+                                Star Wars Battlefront é um jogo eletrônico de 
+                                tiro em primeira e terceira pessoa, produzido 
+                                pela DICE e baseado na franquia Star Wars. 
+                                Foi publicado pela Electronic Arts com a chancela da 
+                                LucasArts a 17 de Novembro de 2015 para Microsoft Windows, 
+                                PlayStation 4 e Xbox One.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+
+            <div class="decorator-start-about"></div>
+
+            <section class="container-game-info">
+                <img class="img-lord-sifh" src="assets/used/lord-sifh.png" alt="">
+
+                <div class="content-game-structure">
+                    <h3>Estrutura do jogo</h3>
+                    <ul>
+                        <li>Jornada</li>
+                        <li>A jornada do guerreiro estelar</li>
+                        <li>Heróis contra os vilões</li>
+                        <li>A batalha galáctica</li>
+                        <li>Superioridade</li>
+                        <li>Fliperama</li>
+                    </ul>
+                </div>
+
+                <img class="img-rey" src="assets/used/rey.png" alt="">
+                
+            </section>
+        </section>
+
+        <section class="container-two">
+            <section class="container-game-images">
+
+                <div class="content-images">
+                    <div class="box-title">
+                        <h3>Atributos</h3>
+                    </div>
+
+                    <figure class="img-one">
+                        <img src="assets/used/fight-one.png" alt="">
+
+                        <div class="box-img">
+                            <figure><img src="assets/used/fight-two.png" alt=""></figure>
+                            <figure><img src="assets/used/fight-three.png" alt=""></figure>
+                            <figure><img src="assets/used/fight-four.png" alt=""></figure>
+                            <figure><img src="assets/used/fight-five.png" alt=""></figure>
+                        </div>
+                    </figure>
+                </div>
+
+            </section>
+        </section>
     </main>
     
     <!-- FOOTER -->
-    <footer 
-        class="footer-container "
-        w3-include-html="pieces/Footer/footer.html">
+    <footer class="footer-container">
     </footer>
-
-    <!-- Script -->
-    <script>
-        w3.includeHTML();
-    </script>
 </body>
 </html>
