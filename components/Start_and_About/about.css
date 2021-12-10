@@ -1,0 +1,66 @@
+.content-game-about {
+    /* size */
+    width: 40rem; 
+    
+    /* text */
+    font-size: 12px;
+    text-align: right;
+
+    /* flex */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+
+    /* position */
+    position: absolute;
+    right: 0;
+
+    /* z-index */
+    z-index: 1;
+
+    /* background-color: green; */
+}
+
+.content-game-about .box-text {
+    /* size */
+    width: 80%;
+    height: 100%;
+
+    /* spacing */
+    padding: 1rem;
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    /* background-color: yellow; */
+}
+
+.content-game-about .box-text h3 {
+    /* text */
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.content-game-about .decoration {
+    /* size */
+    width: 25%;
+    height: 2px;
+    
+    /* spacing */
+    margin: 0.8rem 0;
+    
+    /* background-color */
+    background-color: #000;
+
+}
+
+.img-game-about {
+    /* size */
+    width: 15rem;
+    height: 8.5rem;
+}
+
