@@ -1,4 +1,6 @@
 @import "styles/global.css";
+@import "styles/media.main.css";
+
 @import "pieces/Header/header.css";
 @import "pieces/Main/main.css";
 @import "pieces/Footer/footer.css";

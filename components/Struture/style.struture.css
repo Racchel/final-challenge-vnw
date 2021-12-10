@@ -1,6 +1,8 @@
+@import "../../styles/media.main.css";
+
 .content-game-structure {
    /* size */
-   width: 220px;
+   width: 20rem;
 
    /* padding */
    padding: 70px 20px;

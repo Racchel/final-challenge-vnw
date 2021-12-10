@@ -1,0 +1,73 @@
+@import "../../styles/media.main.css";
+
+.content-images {
+    /* size */
+    width: 100%; 
+    
+    /* spacing */
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    }
+
+.box-title {
+    width: 100%;
+}
+
+.box-img {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-one {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-one img{
+    width: 50%;
+    height: 100%;
+}
+
+.box-img figure {
+    width: 50%;
+}
+
+.box-img figure img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1248px) {
+    .box-img {
+        width: 100%;
+    }
+    .box-img figure {
+        width: 50%;
+    }   
+    .box-img figure img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-one img{
+        width: 100%;
+        height: 50vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .box-img figure {
+        width: 100%;
+    } 
+}

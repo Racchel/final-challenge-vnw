@@ -1,3 +1,5 @@
+@import "../../styles/media.main.css";
+
 .content-game-about {
     /* size */
     width: 40rem; 
@@ -64,3 +66,10 @@
     height: 8.5rem;
 }
 
+.decorator-start-about {
+    width:  85%;
+    height: 2px;
+    background-color: yellow;
+    border: 1px solid #000;
+    margin-bottom: 50px;
+}
