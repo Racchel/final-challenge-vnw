@@ -11,7 +11,7 @@
 }
 
 :root {
-    --padding: 5%;
+    --padding: 8%;
 }
 
 /* GLOBAL */
@@ -99,7 +99,7 @@ h3 {
 
 .img-kylo {
     /* size */
-    width: 62vw;
+    width: 68vw;
 }
 
 .img-legion {
@@ -128,7 +128,11 @@ h3 {
 
 /* START MAIN */
 
+/* container-one */
 .container-one {
+    /* size */
+    width: 100%;
+
     /* spacing */
     padding-right: var(--padding);
 
@@ -142,37 +146,13 @@ h3 {
     flex-direction: column;
     align-items: flex-end;
 
-}
-
-.container-game-info {
-    /* size */
-    min-width: 100%;
-    min-height: 60vh;
-
-    /* spacing
-    padding-right: 2%; */
-    /* margin-bottom: 50px; */
-
-    /* display: flex */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-wrap: wrap;
-
-    /* position */
-    position: relative;
-    top: 0px;
-
-    /* background-color */
-    /* background-color: blue; */
+    /* background-color: green; */
 }
 
 /* container-two */
-
 .container-two {
-    /* spacing
-    padding: 0 var(--padding); */
+    /* size */
+    width: 100%;
 
     /* text */
     color: #fff;
@@ -181,12 +161,61 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
     /* background-color */
     background-color: #2D2D2D;
 
 }
 
+/* container-game-info */
+.container-game-info {
+    /* size */
+    min-width: 100%;
+
+    /* display: flex */
+    display: flex;
+    flex-wrap: wrap;
+
+    /* position */
+    position: relative;
+    top: 0px;
+
+    /* background-color */
+    /* background-color: rgba(0, 0, 255, 0.267); */
+}
+
+#container-game-info-one {
+    /* size */
+    min-height: 65vh; 
+
+    /* spacing */
+    padding-bottom: 2rem;
+    
+    /* flex */
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#container-game-info-two {
+    /* size */
+    height: 35vw;  
+
+    /* spacing */
+    padding-top: 5%;
+
+     /* flex */
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    /* position */
+    position: relative;
+    top: 0;
+
+}
+
+/* ----------------------------------- */
+
+/* container-game-images */
 .container-game-images {
     /* size */
     min-width: 100%;
@@ -206,6 +235,7 @@ h3 {
 
 }
 
+/* container-game-hierarchy */
 .container-game-hierarchy {
     /* size */
     min-width: 100%;
@@ -250,7 +280,7 @@ h3 {
 
     /* position */
     position: absolute;
-    left: 15%;
+    left: 20%;
 
     /*  z-index */
     z-index: 999;
@@ -263,7 +293,7 @@ h3 {
 
 .content-game-start h3 {
     /* text */
-    font-size: 1.9rem;
+    font-size: 190%;
     font-weight: 600;
     text-align: center;
     color: #fff;
@@ -274,7 +304,7 @@ h3 {
     margin: 2rem 0;
 
     /* text */
-    font-size: 0.7rem;
+    font-size: 70%;
     font-weight: 200;
     color: #fff;
 }
@@ -284,10 +314,11 @@ h3 {
     padding: 0.5rem 2rem;
 
     /* border */
-    border: 1px solid #fff;
+    border: 3px solid #fff;
     border-radius: 5%;
 
     /* text */
+    font-size: 100%;
     color: #fff;
 
     /* background-color */
@@ -362,14 +393,18 @@ h3 {
 
 .content-game-about .box-text h3 {
     /* text */
-    font-size: 1rem;
+    font-size: 200%;
     font-weight: 700;
+}
+
+.content-game-about .box-text .text {
+    font-size: 100%;
 }
 
 .content-game-about .decoration {
     /* size */
-    width: 25%;
-    height: 2px;
+    width: 8.5rem;
+    height: 0.15rem;
     
     /* spacing */
     margin: 0.8rem 0;
@@ -386,47 +421,84 @@ h3 {
 }
 
 .decorator-start-about {
-    width:  85%;
-    height: 2px;
-    background-color: yellow;
-    border: 1px solid #000;
-    margin-bottom: 50px;
+    width:  80%;
+    height: 0.3rem;
+    background-image: url("assets/used/linha.svg") ;
 }
 
 /* END CONTENT-GAME-ABOUT */
 
-/* START CONTENT-GAME-STRUCTURE */
+/* START CONTENT-GAME-STRUTURE */
 
-.content-game-structure {
-   /* size */
-   width: 20rem;
+.content-game-struture {
+    /* size */
+    width: 35%;
+    height: 100%;
 
-   /* padding */
-   padding: 70px 20px;
+    /* spacing */
+    padding: 3% 3% 0 0;
+    /* text */
+    text-align: right;
 
-   /* text */
-   text-align: right;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
 
-   /* flex */
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
-   align-items: center;
+    /* position */
+    position: absolute;
+    right: 18%;
 
-   /* background-color: red; */
+    /* background-color: red; */
+}
+
+.content-game-struture .box-title {
+    /* size */
+    width: 70%;
+    
+    /* spacing */
+    margin-bottom: 2%;
+    /* background-color: pink; */
+}
+
+.content-game-struture .box-title h3 {
+    font-size: 200%;
+}
+
+.content-game-struture ul {
+    width: 100%;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+
+.content-game-struture ul li {
+    font-size: 85%;
+}
+
+.content-game-struture ul li:hover {
+    background-color: #D74430;
+    color: #fff;
 }
 
 .img-lord-sifh {
    /* size */
-   width: 400px; 
+   width: 40%; 
+
+   /* position */
+   position: absolute;
+   left: 20%;
 }
 
 .img-rey {
    /* size */
-   width: 200px; 
+   width: 20%;
+
+   /* position */
+   position: absolute;
 }
 
-/* END CONTENT-GAME-STRUCTURE */
+/* END CONTENT-GAME-STRUTURE */
 
 /* START CONTENT-GAME-ATTRIBUTE */
 
@@ -524,17 +596,18 @@ h3 {
 }
 
 /* 1080px */
-@media (max-width: 1080px) {
+@media (max-width: 1160px) {
 
     /* ABOUT */
     .content-game-about { 
         /* size */
-        width: 60%;
+        width: 52%;
     }
+
 }
 
 /* 980px */
-@media (max-width: 980px) {
+@media (max-width: 1033px) {
 
     /* ABOUT */
     .content-game-about {  
@@ -543,10 +616,40 @@ h3 {
         align-items: flex-end;
     }
 
-    .box-text { 
-        /* size */
+    .content-game-about .box-text {
+         /* size */
         width: 90%;
+        padding: 1rem 0 1rem 1rem;
     }
+
+    #container-game-info-two {
+        height: 50vw;
+
+        /* spacing */
+        padding-top: 8%;
+    }
+
+    .content-game-struture {
+        /* size */
+        width: 55%;
+    }
+
+    .img-lord-sifh {
+        /* size */
+        width: 55%;
+
+        /* position */
+        left: 2%;
+    }
+
+    .img-rey {
+        /* size */
+        width: 29%;
+
+        /* position */
+        right: -8%;
+    }
+
 }
 
 /* 800px */
@@ -557,54 +660,30 @@ h3 {
         /* size */
         width: 50%; 
     }
-    .box-text {
+    .content-game-about .box-text {
         /* size */
-        width: 100%;
+        width: 80%;
     }
 }
 
-/* 768px */
-@media (max-width: 768px) {
-
-    .box-img figure {
-        width: 100%;
-    } 
-
-    .container-game-hierarchy {
-        /* spacing */
-        padding: 0;
-    }
-
-    .content-images  .box-title {
-        /* spacing */
-        padding: 10% 0 2% 0;
-
-        /* flex */
-        display: flex;
-        justify-content: center;
-    }
-
-    .legend-img {
-        padding: 2% var(--padding) 2% var(--padding);
-    }
-}
-
-/* 680px */
-@media (max-width: 680px) {
-
+@media (max-width: 720px) {
     /* GAME-INFO */
     .container-game-info {
-        /* flex */
-        flex-direction: column;
-
         /* position */
         position: static;   
     }
 
+    #container-game-info-one {
+        padding-bottom: 0;
+    }
+
     /* START */
     .content-game-start {
+        width: 17rem;
+        height: 25rem;  
+
         /* spacing */
-        margin-bottom: 2rem;
+        margin: 5rem 0 1rem 0;
 
         /* position */
         position: static;
@@ -613,20 +692,121 @@ h3 {
         z-index: 0;
     }
 
+    .content-game-start h3 {
+        font-size: 220%;
+    }
+
+    .content-game-start p {
+        /* text */
+        font-size: 90%;
+    }
+
     /* ABOUT */
+
     .content-game-about { 
         /* size */
-        width: 80%; 
+        width: 100%; 
 
         /* position */
         position: static; 
     }
-}
 
-@media (max-width: 550px) {
+    .content-game-about .box-text {
+        width: 100%;
+        font-size: 110%;
+    }
+
+    .content-game-about .decoration {
+        /* spacing */
+        margin: 0.4rem 0;
+    }
+
+    .content-game-about .box-text h3 {
+        /* text */
+        font-size: 130%;
+    }
+
+    .img-game-about {
+        /* size */
+        width: 17rem;
+        height: 12rem;
+    }
+
+    .content-game-about .decoration {
+        height: 0.2rem;
+    }
+
+    /* STRUTURE */
+
+    .content-game-struture {
+        right: 15%;
+    }
+
+    .content-game-struture .box-title h3 {
+        font-size: 110%;
+    }
+
+    .content-game-struture ul {
+        line-height: 1.8rem;
+    }
+
+    .content-game-struture ul li {
+        font-size: 75%;
+    }
+
+    /* HIERARCHY */
+
     .container-game-hierarchy {
         font-size: 8px;
+
+        /* spacing */
+        padding: 0;
+    }
+
+    .content-images .box-title {
+        /* flex */
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-img figure {
+        width: 100%;
+    } 
+
+    .legend-img {
+        padding: 2% var(--padding) 2% var(--padding);
     }
 }
+
+@media (max-width: 540px) {
+
+    .content-game-struture .box-title h3 {
+        font-size: 110%;
+    }
+
+    .content-game-struture ul {
+        line-height: 1.1rem;
+    }
+
+    .content-game-struture ul li {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 375px) {
+    .content-game-struture {
+        padding: 0 2% 0 0;
+    }
+
+    .content-game-struture ul li {
+        font-size: 50%;
+    }
+
+    .content-game-struture ul {
+        line-height: 1rem;
+    }
+}
+
+
 
 /* END MEDIA */
