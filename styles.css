@@ -10,6 +10,10 @@
     list-style: none;
 }
 
+:root {
+    --padding: 5%;
+}
+
 /* GLOBAL */
 
 h3 {
@@ -68,7 +72,6 @@ h3 {
 
     /* flex */
     justify-content: flex-start;
-
 }
 
 .box-kylo {
@@ -127,7 +130,7 @@ h3 {
 
 .container-one {
     /* spacing */
-    padding-right: 3rem;
+    padding-right: var(--padding);
 
     /* background-image */
     background-image: url("assets/used/star-wars-robot.png");
@@ -146,8 +149,8 @@ h3 {
     min-width: 100%;
     min-height: 60vh;
 
-    /* spacing */
-    padding-right: 3rem;
+    /* spacing
+    padding-right: 2%; */
     /* margin-bottom: 50px; */
 
     /* display: flex */
@@ -168,8 +171,11 @@ h3 {
 /* container-two */
 
 .container-two {
-    /* spacing */
-    padding: 0 3rem;
+    /* spacing
+    padding: 0 var(--padding); */
+
+    /* text */
+    color: #fff;
 
     /* flex */
     display: flex;
@@ -187,10 +193,9 @@ h3 {
     min-height: 30vh;
 
     /* spacing */
-    padding-bottom: 2.5rem;
-    margin-bottom: 50px;
+    padding: 0 var(--padding) 2% var(--padding);
 
-    /* display: flex */
+    /* display: flex */ 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -199,6 +204,27 @@ h3 {
 
     /* background-color: pink; */
 
+}
+
+.container-game-hierarchy {
+    /* size */
+    min-width: 100%;
+    min-height: 30vh;
+
+    /* spacing */
+    padding: 0 var(--padding) 2% var(--padding);
+
+    /* text */
+    font-size: 12px;
+    text-align: right;
+
+    /* display: flex */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* background-color: pink; */
 }
 
 /* START CONTENT-GAME-START */
@@ -411,19 +437,28 @@ h3 {
     /* spacing */
     margin-bottom: 1rem;
 
+    /* flex */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
 
-    }
-
-.box-title {
+.content-images  .box-title {
+    /* size */
     width: 100%;
+
+    /* spacing */
+    padding: 10% 0 2% var(--padding);
+
+    /* text */
+    font-size: 1.2rem;
 }
 
 .box-img {
+    /* size */
     width: 50%;
 
+    /* flex */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -451,12 +486,25 @@ h3 {
     height: 100%;
 }
 
+.img-full {
+    width: 100%;
+}
+
+.legend-img {
+    width: 60%;
+
+    padding-top: 2%;
+}
+
 /* END CONTENT-GAME-ATTRIBUTE */
 
 /* END MAIN */
 
+
+
 /* START MEDIA */
 
+/* 1248px */
 @media (max-width: 1248px) {
     .box-img {
         width: 100%;
@@ -515,11 +563,30 @@ h3 {
     }
 }
 
+/* 768px */
 @media (max-width: 768px) {
 
     .box-img figure {
         width: 100%;
     } 
+
+    .container-game-hierarchy {
+        /* spacing */
+        padding: 0;
+    }
+
+    .content-images  .box-title {
+        /* spacing */
+        padding: 10% 0 2% 0;
+
+        /* flex */
+        display: flex;
+        justify-content: center;
+    }
+
+    .legend-img {
+        padding: 2% var(--padding) 2% var(--padding);
+    }
 }
 
 /* 680px */
@@ -553,6 +620,12 @@ h3 {
 
         /* position */
         position: static; 
+    }
+}
+
+@media (max-width: 550px) {
+    .container-game-hierarchy {
+        font-size: 8px;
     }
 }
 
