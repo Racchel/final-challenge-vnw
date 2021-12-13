@@ -1,812 +1,783 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-
-/* RESET */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    list-style: none;
-}
-
-:root {
-    --padding: 8%;
-}
-
-/* GLOBAL */
-
-h3 {
-    /* text */
-    text-transform: uppercase;
-}
-
-/* FLEX */
-
-.flex-row-centerXY {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.flex-row-centerY {
-    display: flex;
-    align-items: center;
-}
-
-/* HEADER */
-
-.header-container {
-    /* size */
-    height: 40vw;
-
-    /* background-image */
-    background-image: url("assets/used/star-war-top.png");
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-
-    /* position */
-    position: relative;
-}
-
-.box-left {
-    /* size */
-    width: 50%;
-
-    /* spacing */
-    padding-top: 9.5%;
-    padding-right: 5%;
-
-    /* flex */
-    justify-content: flex-end;
-}
-
-.box-right {
-    /* size */
-    width: 50%;
-
-    /* spacing */
-    padding-top: 9.5%;
-    padding-left: 15%;
-
-    /* flex */
-    justify-content: flex-start;
-}
-
-.box-kylo {
-    /* size */
-    width: 80vw;
-    height: 100%;
-
-    /* flex */
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-
-    /* position */
-    position: absolute;
-    top: 12%;
-
-    /* z-index */
-    z-index: 1;
-}
-
-.img-star-wars {
-    /* size */
-    width: 26.1vw;
-}
-
-.img-kylo {
-    /* size */
-    width: 68vw;
-}
-
-.img-legion {
-    /* size */
-    width: 9.1vw;
-
-    /* position */
-    position: absolute;
-    bottom: 0;
-    right: 11.6%;
-}
-
-.box-download {
-    /* size */
-    width: 20.7%;
-    height: 40.5%;
-
-    /* background-image */
-    background-image: url("assets/used/strom-trupe-red.png.png");
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-}
-
-/* END HEADER */
-
-/* START MAIN */
-
-/* container-one */
-.container-one {
-    /* size */
-    width: 100%;
-
-    /* spacing */
-    padding-right: var(--padding);
-
-    /* background-image */
-    background-image: url("assets/used/star-wars-robot.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    /* background-color: green; */
-}
-
-/* container-two */
-.container-two {
-    /* size */
-    width: 100%;
-
-    /* text */
-    color: #fff;
-
-    /* flex */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    /* background-color */
-    background-color: #2D2D2D;
-
-}
-
-/* container-game-info */
-.container-game-info {
-    /* size */
-    min-width: 100%;
-
-    /* display: flex */
-    display: flex;
-    flex-wrap: wrap;
-
-    /* position */
-    position: relative;
-    top: 0px;
-
-    /* background-color */
-    /* background-color: rgba(0, 0, 255, 0.267); */
-}
-
-#container-game-info-one {
-    /* size */
-    min-height: 65vh; 
-
-    /* spacing */
-    padding-bottom: 2rem;
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+    /* RESET */
     
-    /* flex */
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-#container-game-info-two {
-    /* size */
-    height: 35vw;  
-
-    /* spacing */
-    padding-top: 5%;
-
-     /* flex */
-    justify-content: flex-end;
-    align-items: flex-start;
-
-    /* position */
-    position: relative;
-    top: 0;
-
-}
-
-/* ----------------------------------- */
-
-/* container-game-images */
-.container-game-images {
-    /* size */
-    min-width: 100%;
-    min-height: 30vh;
-
-    /* spacing */
-    padding: 0 var(--padding) 2% var(--padding);
-
-    /* display: flex */ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    /* background-color: pink; */
-
-}
-
-/* container-game-hierarchy */
-.container-game-hierarchy {
-    /* size */
-    min-width: 100%;
-    min-height: 30vh;
-
-    /* spacing */
-    padding: 0 var(--padding) 2% var(--padding);
-
-    /* text */
-    font-size: 12px;
-    text-align: right;
-
-    /* display: flex */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-
-    /* background-color: pink; */
-}
-
-/* START CONTENT-GAME-START */
-
-.content-game-start {
-    /* size */
-    width: 15rem;
-    height: 22.5rem;
-
-    /* spacing */
-    padding: 4rem 1rem 1rem 1rem;
-
-    /* background-image */
-    background-image: url("assets/used/strom-trupe-red.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    /* position */
-    position: absolute;
-    left: 20%;
-
-    /*  z-index */
-    z-index: 999;
-}
-
-.content-game-start .box-title {
-    /* size */
-    width: 70%;
-}
-
-.content-game-start h3 {
-    /* text */
-    font-size: 190%;
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-}
-
-.content-game-start p {
-    /* spacing */
-    margin: 2rem 0;
-
-    /* text */
-    font-size: 70%;
-    font-weight: 200;
-    color: #fff;
-}
-
-.content-game-start button {
-    /* spacing */
-    padding: 0.5rem 2rem;
-
-    /* border */
-    border: 3px solid #fff;
-    border-radius: 5%;
-
-    /* text */
-    font-size: 100%;
-    color: #fff;
-
-    /* background-color */
-    background-color: transparent;
-
-}
-
-.content-game-start .content-test-update {
-    /* size */
-    width: 100%;
-
-    /* spacing */
-    padding: 1rem 0;
-
-    /* flex */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.content-game-start .content-test-update span {
-    /* text */
-    font-size: 0.5rem;
-    text-align: right;
-    color: #fff;
-}
-
-/* END CONTENT-GAME-START */
-
-/* START CONTENT-GAME-ABOUT */
-
-.content-game-about {
-    /* size */
-    width: 40rem; 
-    
-    /* text */
-    font-size: 12px;
-    text-align: right;
-
-    /* flex */
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
-
-    /* position */
-    position: absolute;
-    right: 0;
-
-    /* z-index */
-    z-index: 1;
-
-    /* background-color: green; */
-}
-
-.content-game-about .box-text {
-    /* size */
-    width: 80%;
-    height: 100%;
-
-    /* spacing */
-    padding: 1rem;
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-
-    /* background-color: yellow; */
-}
-
-.content-game-about .box-text h3 {
-    /* text */
-    font-size: 200%;
-    font-weight: 700;
-}
-
-.content-game-about .box-text .text {
-    font-size: 100%;
-}
-
-.content-game-about .decoration {
-    /* size */
-    width: 8.5rem;
-    height: 0.15rem;
-    
-    /* spacing */
-    margin: 0.8rem 0;
-    
-    /* background-color */
-    background-color: #000;
-
-}
-
-.img-game-about {
-    /* size */
-    width: 15rem;
-    height: 8.5rem;
-}
-
-.decorator-start-about {
-    width:  80%;
-    height: 0.3rem;
-    background-image: url("assets/used/linha.svg") ;
-}
-
-/* END CONTENT-GAME-ABOUT */
-
-/* START CONTENT-GAME-STRUTURE */
-
-.content-game-struture {
-    /* size */
-    width: 35%;
-    height: 100%;
-
-    /* spacing */
-    padding: 3% 3% 0 0;
-    /* text */
-    text-align: right;
-
-    /* flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-
-    /* position */
-    position: absolute;
-    right: 18%;
-
-    /* background-color: red; */
-}
-
-.content-game-struture .box-title {
-    /* size */
-    width: 70%;
-    
-    /* spacing */
-    margin-bottom: 2%;
-    /* background-color: pink; */
-}
-
-.content-game-struture .box-title h3 {
-    font-size: 200%;
-}
-
-.content-game-struture ul {
-    width: 100%;
-    line-height: 2rem;
-    text-transform: uppercase;
-}
-
-.content-game-struture ul li {
-    font-size: 85%;
-}
-
-.content-game-struture ul li:hover {
-    background-color: #D74430;
-    color: #fff;
-}
-
-.img-lord-sifh {
-   /* size */
-   width: 40%; 
-
-   /* position */
-   position: absolute;
-   left: 20%;
-}
-
-.img-rey {
-   /* size */
-   width: 20%;
-
-   /* position */
-   position: absolute;
-}
-
-/* END CONTENT-GAME-STRUTURE */
-
-/* START CONTENT-GAME-ATTRIBUTE */
-
-.content-images {
-    /* size */
-    width: 100%; 
-    
-    /* spacing */
-    margin-bottom: 1rem;
-
-    /* flex */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.content-images  .box-title {
-    /* size */
-    width: 100%;
-
-    /* spacing */
-    padding: 10% 0 2% var(--padding);
-
-    /* text */
-    font-size: 1.2rem;
-}
-
-.box-img {
-    /* size */
-    width: 50%;
-
-    /* flex */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.img-one {
-    width: 100%;
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.img-one img{
-    width: 50%;
-    height: 100%;
-}
-
-.box-img figure {
-    width: 50%;
-}
-
-.box-img figure img{
-    width: 100%;
-    height: 100%;
-}
-
-.img-full {
-    width: 100%;
-}
-
-.legend-img {
-    width: 60%;
-
-    padding-top: 2%;
-}
-
-/* END CONTENT-GAME-ATTRIBUTE */
-
-/* END MAIN */
-
-
-
-/* START MEDIA */
-
-/* 1248px */
-@media (max-width: 1248px) {
-    .box-img {
-        width: 100%;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+        list-style: none;
     }
-    .box-img figure {
-        width: 50%;
-    }   
-    .box-img figure img{
-        width: 100%;
-        height: 100%;
+    
+     :root {
+        --padding: 8%;
     }
-
-    .img-one img{
-        width: 100%;
-        height: 50vw;
+    /* GLOBAL */
+    
+    h3 {
+        /* text */
+        text-transform: uppercase;
     }
-}
-
-/* 1080px */
-@media (max-width: 1160px) {
-
-    /* ABOUT */
-    .content-game-about { 
+    /* FLEX */
+    
+    .flex-row-centerXY {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .flex-row-centerY {
+        display: flex;
+        align-items: center;
+    }
+    /* HEADER */
+    
+    .header-container {
         /* size */
-        width: 52%;
+        height: 40vw;
+        /* background-image */
+        background-image: url("assets/used/star-war-top.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        /* position */
+        position: relative;
     }
-
-}
-
-/* 980px */
-@media (max-width: 1033px) {
-
-    /* ABOUT */
-    .content-game-about {  
+    
+    .box-left {
+        /* size */
+        width: 50%;
+        /* spacing */
+        padding-top: 9.5%;
+        padding-right: 5%;
         /* flex */
+        justify-content: flex-end;
+    }
+    
+    .box-right {
+        /* size */
+        width: 50%;
+        /* spacing */
+        padding-top: 9.5%;
+        padding-left: 15%;
+        /* flex */
+        justify-content: flex-start;
+    }
+    
+    .box-kylo {
+        /* size */
+        width: 80vw;
+        height: 100%;
+        /* flex */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* position */
+        position: absolute;
+        top: 12%;
+        /* z-index */
+        z-index: 1;
+    }
+    
+    .img-star-wars {
+        /* size */
+        width: 26.1vw;
+    }
+    
+    .img-kylo {
+        /* size */
+        width: 68vw;
+    }
+    
+    .img-legion {
+        /* size */
+        width: 9.1vw;
+        /* position */
+        position: absolute;
+        bottom: 0;
+        right: 11.6%;
+    }
+    
+    .box-download {
+        /* size */
+        width: 20.7%;
+        height: 40.5%;
+        /* background-image */
+        background-image: url("assets/used/strom-trupe-red.png.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    /* END HEADER */
+    /* START MAIN */
+    /* container-one */
+    
+    .container-one {
+        /* size */
+        width: 100%;
+        /* spacing */
+        padding-right: var(--padding);
+        /* background-image */
+        background-image: url("assets/used/star-wars-robot.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        /* flex */
+        display: flex;
         flex-direction: column;
         align-items: flex-end;
+        /* background-color: green; */
     }
-
-    .content-game-about .box-text {
-         /* size */
-        width: 90%;
-        padding: 1rem 0 1rem 1rem;
+    /* container-two */
+    
+    .container-two {
+        /* size */
+        width: 100%;
+        /* text */
+        color: #fff;
+        /* flex */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* background-color */
+        background-color: #2d2d2d;
     }
-
-    #container-game-info-two {
-        height: 50vw;
-
+    /* container-game-info */
+    
+    .container-game-info {
+        /* size */
+        min-width: 100%;
+        /* display: flex */
+        display: flex;
+        flex-wrap: wrap;
+        /* position */
+        position: relative;
+        top: 0px;
+        /* background-color */
+        /* background-color: rgba(0, 0, 255, 0.267); */
+    }
+    
+    #container-game-info-one {
+        /* size */
+        min-height: 65vh;
         /* spacing */
-        padding-top: 8%;
+        padding-bottom: 2rem;
+        /* flex */
+        justify-content: flex-end;
+        align-items: flex-end;
     }
-
-    .content-game-struture {
+    
+    #container-game-info-two {
         /* size */
-        width: 55%;
-    }
-
-    .img-lord-sifh {
-        /* size */
-        width: 55%;
-
+        height: 35vw;
+        /* spacing */
+        padding-top: 5%;
+        /* flex */
+        justify-content: flex-end;
+        align-items: flex-start;
         /* position */
-        left: 2%;
+        /* position: relative;
+  top: 0; */
     }
-
-    .img-rey {
+    /* ----------------------------------- */
+    /* container-game-images */
+    
+    .container-game-images {
         /* size */
-        width: 29%;
-
+        min-width: 100%;
+        min-height: 30vh;
+        /* spacing */
+        padding: 0 var(--padding) 2% var(--padding);
+        /* display: flex */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: pink; */
+    }
+    /* container-game-hierarchy */
+    
+    .container-game-hierarchy {
+        /* size */
+        min-width: 100%;
+        min-height: 30vh;
+        /* spacing */
+        padding: 0 var(--padding) 2% var(--padding);
+        /* text */
+        font-size: 12px;
+        text-align: right;
+        /* display: flex */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        /* background-color: pink; */
+    }
+    /* START CONTENT-GAME-START */
+    
+    .content-game-start {
+        /* size */
+        width: 15rem;
+        height: 22.5rem;
+        /* spacing */
+        padding: 4rem 1rem 1rem 1rem;
+        /* background-image */
+        background-image: url("assets/used/strom-trupe-red.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
         /* position */
-        right: -8%;
+        position: absolute;
+        left: 20%;
+        /*  z-index */
+        z-index: 999;
     }
-
-}
-
-/* 800px */
-@media (max-width: 800px) {
-
-    /* ABOUT */
-    .content-game-about  {
+    
+    .content-game-start .box-title {
         /* size */
-        width: 50%; 
+        width: 70%;
     }
+    
+    .content-game-start h3 {
+        /* text */
+        font-size: 190%;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .content-game-start p {
+        /* spacing */
+        margin: 2rem 0;
+        /* text */
+        font-size: 70%;
+        font-weight: 200;
+        color: #fff;
+    }
+    
+    .content-game-start button {
+        /* spacing */
+        padding: 0.5rem 2rem;
+        /* border */
+        border: 3px solid #fff;
+        border-radius: 5%;
+        /* text */
+        font-size: 100%;
+        color: #fff;
+        /* background-color */
+        background-color: transparent;
+    }
+    
+    .content-game-start .content-test-update {
+        /* size */
+        width: 100%;
+        /* spacing */
+        padding: 1rem 0;
+        /* flex */
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .content-game-start .content-test-update span {
+        /* text */
+        font-size: 0.5rem;
+        text-align: right;
+        color: #fff;
+    }
+    /* END CONTENT-GAME-START */
+    /* START CONTENT-GAME-ABOUT */
+    
+    .content-game-about {
+        /* size */
+        width: 40rem;
+        /* text */
+        font-size: 12px;
+        text-align: right;
+        /* flex */
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        /* position */
+        position: absolute;
+        right: 0;
+        /* z-index */
+        z-index: 1;
+        /* background-color: green; */
+    }
+    
     .content-game-about .box-text {
         /* size */
         width: 80%;
-    }
-}
-
-@media (max-width: 720px) {
-    /* GAME-INFO */
-    .container-game-info {
-        /* position */
-        position: static;   
-    }
-
-    #container-game-info-one {
-        padding-bottom: 0;
-    }
-
-    /* START */
-    .content-game-start {
-        width: 17rem;
-        height: 25rem;  
-
+        height: 100%;
         /* spacing */
-        margin: 5rem 0 1rem 0;
-
-        /* position */
-        position: static;
-
-        /* z-index */
-        z-index: 0;
+        padding: 1rem;
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        /* background-color: yellow; */
     }
-
-    .content-game-start h3 {
-        font-size: 220%;
-    }
-
-    .content-game-start p {
-        /* text */
-        font-size: 90%;
-    }
-
-    /* ABOUT */
-
-    .content-game-about { 
-        /* size */
-        width: 100%; 
-
-        /* position */
-        position: static; 
-    }
-
-    .content-game-about .box-text {
-        width: 100%;
-        font-size: 110%;
-    }
-
-    .content-game-about .decoration {
-        /* spacing */
-        margin: 0.4rem 0;
-    }
-
+    
     .content-game-about .box-text h3 {
         /* text */
-        font-size: 130%;
+        font-size: 200%;
+        font-weight: 700;
     }
-
+    
+    .content-game-about .box-text .text {
+        font-size: 100%;
+    }
+    
+    .content-game-about .decoration {
+        /* size */
+        width: 8.5rem;
+        height: 0.15rem;
+        /* spacing */
+        margin: 0.8rem 0;
+        /* background-color */
+        background-color: #000;
+    }
+    
     .img-game-about {
         /* size */
-        width: 17rem;
-        height: 12rem;
+        width: 15rem;
+        height: 8.5rem;
     }
-
-    .content-game-about .decoration {
-        height: 0.2rem;
+    
+    .decorator-start-about {
+        width: 80%;
+        height: 0.3rem;
+        background-image: url("assets/used/linha.svg");
     }
-
-    /* STRUTURE */
-
+    /* END CONTENT-GAME-ABOUT */
+    /* START CONTENT-GAME-STRUTURE */
+    
     .content-game-struture {
-        right: 15%;
-    }
-
-    .content-game-struture .box-title h3 {
-        font-size: 110%;
-    }
-
-    .content-game-struture ul {
-        line-height: 1.8rem;
-    }
-
-    .content-game-struture ul li {
-        font-size: 75%;
-    }
-
-    /* HIERARCHY */
-
-    .container-game-hierarchy {
-        font-size: 8px;
-
+        /* size */
+        width: 35%;
         /* spacing */
-        padding: 0;
+        padding: 3% 3% 0 0;
+        /* text */
+        text-align: right;
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        /* position */
+        position: absolute;
+        right: 18%;
+        /* background-color: red; */
     }
-
+    
+    .content-game-struture .box-title {
+        /* size */
+        width: 70%;
+        /* spacing */
+        margin-bottom: 2%;
+        /* background-color: pink; */
+    }
+    
+    .content-game-struture .box-title h3 {
+        font-size: 200%;
+    }
+    
+    .content-game-struture ul {
+        width: 100%;
+        /* text */
+        line-height: 2rem;
+        text-transform: uppercase;
+    }
+    
+    .content-game-struture ul li {
+        font-size: 85%;
+    }
+    
+    .content-game-struture ul li:hover {
+        background-color: #d74430;
+        color: #fff;
+    }
+    
+    .img-lord-sifh {
+        /* size */
+        width: 40%;
+        /* position */
+        position: absolute;
+        left: 20%;
+    }
+    
+    .img-rey {
+        /* size */
+        width: 20%;
+        /* position */
+        position: absolute;
+    }
+    /* END CONTENT-GAME-STRUTURE */
+    /* START CONTENT-GAME-ATTRIBUTE */
+    
+    .content-images {
+        /* size */
+        width: 100%;
+        /* spacing */
+        margin-bottom: 1rem;
+        /* flex */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
     .content-images .box-title {
+        /* size */
+        width: 100%;
+        /* spacing */
+        padding: 10% 0 2% var(--padding);
+        /* text */
+        font-size: 1.2rem;
+    }
+    
+    .box-img {
+        /* size */
+        width: 50%;
+        /* flex */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .img-one {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .img-one img {
+        width: 50%;
+        height: 100%;
+    }
+    
+    .box-img figure {
+        width: 50%;
+    }
+    
+    .box-img figure img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img-full {
+        width: 100%;
+    }
+    
+    .legend-img {
+        width: 60%;
+        padding-top: 2%;
+    }
+    /* END CONTENT-GAME-ATTRIBUTE */
+    /* START CONTENT-HOW-TO-PLAY */
+    
+    .title-how-to-play {
+        /* size */
+        width: 100%;
+        /* spacing */
+        padding: 5rem 0;
         /* flex */
         display: flex;
         justify-content: center;
     }
-
-    .box-img figure {
+    
+    .container-three {
+        /* size */
         width: 100%;
-    } 
-
-    .legend-img {
-        padding: 2% var(--padding) 2% var(--padding);
+        min-height: 70vh;
+        /* flex */
+        display: flex;
+        justify-content: flex-end;
+        /* position */
+        position: relative;
+        /* background-color: red; */
     }
-}
-
-@media (max-width: 540px) {
-
-    .content-game-struture .box-title h3 {
-        font-size: 110%;
+    
+    .img-capa_preta {
+        /* size */
+        width: 20rem;
+        /* position */
+        position: absolute;
+        right: 70%;
+        bottom: 30%;
+        /* z-index */
+        z-index: 2;
     }
-
-    .content-game-struture ul {
-        line-height: 1.1rem;
+    
+    .container-game-button {
+        /* size */
+        width: 70%;
+        /* spacing  */
+        padding: 2rem 0;
+        /* flex */
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /* background-color: purple; */
     }
-
-    .content-game-struture ul li {
-        font-size: 60%;
+    
+    .box-button {
+        width: 11rem;
+        height: 10rem;
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* border: 2px solid red; */
     }
-}
-
-@media (max-width: 375px) {
-    .content-game-struture {
-        padding: 0 2% 0 0;
+    
+    .box-button .button {
+        /* size */
+        width: 100%;
+        height: 2.5rem;
+        /* border */
+        border: none;
+        /* text */
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1rem;
+        /* background-color */
+        background-color: #000;
     }
-
-    .content-game-struture ul li {
-        font-size: 50%;
+    
+    .box-button p {
+        width: 80%;
+        /* text */
+        text-align: center;
+        font-size: 0.8rem;
     }
-
-    .content-game-struture ul {
-        line-height: 1rem;
+    
+    .box-button .number {
+        font-size: 1.6rem;
     }
-}
-
-
-
-/* END MEDIA */
+    
+    .box-button .linha {
+        width: 25%;
+        height: 3px;
+        background-color: #000;
+    }
+    
+    .box-button .button:hover {
+        background-color: #d74430;
+    }
+    
+    .box-button:hover .number {
+        font-weight: bold;
+    }
+    
+    .box-button:hover .linha {
+        background-color: #d74430;
+    }
+    /* END MAIN */
+    /* START MEDIA */
+    
+    @media (max-width: 1248px) {
+        .box-img {
+            width: 100%;
+        }
+        .box-img figure {
+            width: 50%;
+        }
+        .box-img figure img {
+            width: 100%;
+            height: 100%;
+        }
+        .img-one img {
+            width: 100%;
+            height: 50vw;
+        }
+    }
+    
+    @media (max-width: 1160px) {
+        /* ABOUT */
+        .content-game-about {
+            /* size */
+            width: 52%;
+        }
+    }
+    
+    @media (max-width: 1033px) {
+        /* ABOUT */
+        .content-game-about {
+            /* flex */
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .content-game-about .box-text {
+            /* size */
+            width: 90%;
+            padding: 1rem 0 1rem 1rem;
+        }
+        #container-game-info-two {
+            height: 50vw;
+            /* spacing */
+            padding-top: 8%;
+        }
+        .content-game-struture {
+            /* size */
+            width: 55%;
+        }
+        .img-lord-sifh {
+            /* size */
+            width: 55%;
+            /* position */
+            left: 2%;
+        }
+        .img-rey {
+            /* size */
+            width: 29%;
+            /* position */
+            right: 0;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        /* ABOUT */
+        .content-game-about {
+            /* size */
+            width: 50%;
+        }
+        .content-game-about .box-text {
+            /* size */
+            width: 80%;
+        }
+    }
+    
+    @media (max-width: 720px) {
+        /* GAME-INFO */
+        .container-game-info {
+            /* position */
+            position: static;
+        }
+        #container-game-info-one {
+            padding-bottom: 0;
+        }
+        /* START */
+        .content-game-start {
+            width: 17rem;
+            height: 25rem;
+            /* spacing */
+            margin: 5rem 0 1rem 0;
+            /* position */
+            position: static;
+            /* z-index */
+            z-index: 0;
+        }
+        .content-game-start h3 {
+            font-size: 220%;
+        }
+        .content-game-start p {
+            /* text */
+            font-size: 90%;
+        }
+        /* ABOUT */
+        .content-game-about {
+            /* size */
+            width: 100%;
+            /* position */
+            position: static;
+        }
+        .content-game-about .box-text {
+            width: 100%;
+            font-size: 110%;
+        }
+        .content-game-about .decoration {
+            /* spacing */
+            margin: 0.4rem 0;
+        }
+        .content-game-about .box-text h3 {
+            /* text */
+            font-size: 130%;
+        }
+        .img-game-about {
+            /* size */
+            width: 17rem;
+            height: 12rem;
+        }
+        .content-game-about .decoration {
+            height: 0.2rem;
+        }
+        /* STRUTURE */
+        .content-game-struture {
+            right: 23%;
+        }
+        .content-game-struture .box-title h3 {
+            font-size: 110%;
+        }
+        .content-game-struture ul {
+            line-height: 1.8rem;
+        }
+        .content-game-struture ul li {
+            font-size: 75%;
+        }
+        /* HIERARCHY */
+        .container-game-hierarchy {
+            font-size: 8px;
+            /* spacing */
+            padding: 0;
+        }
+        .content-images .box-title {
+            /* flex */
+            display: flex;
+            justify-content: center;
+        }
+        .box-img figure {
+            width: 100%;
+        }
+        .legend-img {
+            padding: 2% var(--padding) 2% var(--padding);
+        }
+    }
+    
+    @media (max-width: 540px) {
+        .content-game-struture .box-title h3 {
+            font-size: 110%;
+        }
+        .content-game-struture ul {
+            line-height: 1.1rem;
+        }
+        .content-game-struture ul li {
+            font-size: 60%;
+        }
+    }
+    
+    @media (max-width: 502px) {
+        .container-game-button {
+            /* spacing  */
+            padding: 0.5rem 0;
+            /**/
+        }
+        .img-capa_preta {
+            /* size */
+            width: 26rem;
+            /* position */
+            right: 55%;
+            bottom: 0;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .content-game-struture {
+            padding: 0 2% 0 0;
+        }
+        .content-game-struture ul li {
+            font-size: 50%;
+        }
+        .content-game-struture ul {
+            line-height: 1rem;
+        }
+    }
+    /* END MEDIA */
